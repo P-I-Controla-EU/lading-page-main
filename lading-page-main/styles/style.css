@@ -2,10 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root{
-    --azulfraco : #86cbe9;
-    --azulforte : #3483dd;
-    --azulfraco_novo : #87a9ff;
+:root {
+    --azulfraco: #86cbe9;
+    --azulforte: #3483dd;
+    --azulfraco_novo: #87a9ff;
     --azulforte_novo: #4a6dc7;
 
 }
@@ -135,9 +135,10 @@ img {
 .menu-nav a:hover {
     color: var(--azulforte_novo);
 }
+
 .menu-link:hover::after {
     width: 100%;
-  } 
+}
 
 /*sobre*/
 .introducao {
@@ -171,8 +172,8 @@ img {
     font-size: 1.3em;
     line-height: 1.5;
     margin-bottom: 1em;
-
-    color: #696969;
+    font-weight: 500;
+    color: #4e4e4e;
 }
 
 .sobre-img {
@@ -217,6 +218,7 @@ img {
 }
 
 .card-plano {
+    
     background-color: #fafbfc;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -229,7 +231,7 @@ img {
     transition: transform 0.3s, box-shadow 0.3s;
     position: relative;
     /* Necessário para posicionar a etiqueta */
-
+    padding-bottom: 100px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -243,7 +245,7 @@ img {
 
 .titulo-plano {
     font-size: 1.5em;
-    color: var(--azulforte  );
+    color: var(--azulforte);
     /* Cor primária */
     margin-bottom: 10px;
 }
@@ -328,7 +330,7 @@ img {
     color: #3fb5e7;
     border: 3px solid #3fb5e7;
     font-weight: bold;
-}   
+}
 
 .btn-secundario:hover {
     background-color: #e9ecef;
@@ -451,4 +453,62 @@ img {
     text-align: center;
     font-size: 1em;
     color: white;
+}
+
+/*estilo do botao experimentar gratis*/
+.btn-svg-container {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: 15px;
+    /* igual aos outros botões */
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.btn-svg {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid var(--azulforte_novo);
+    outline: none;
+    position: relative;
+    transition: background-color 1s ease-in-out;
+    border-radius: 6px;
+}
+
+.btn-svg span {
+    color: var(--azulforte_novo);
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-svg svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: var(--azulforte_novo);
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: stroke-dashoffset 1s ease-in-out;
+}
+
+.btn-svg:hover {
+    background: var(--azulforte_novo);
+}
+
+.btn-svg:hover svg {
+    stroke-dashoffset: -480;
+    stroke: #fff;
+}
+
+.btn-svg:hover span {
+    color: #fff;
 }
