@@ -2,6 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root{
+    --azulfraco : #86cbe9;
+    --azulforte : #3483dd;
+    --azulfraco_novo : #87a9ff;
+    --azulforte_novo: #4a6dc7;
+
+}
+
 body,
 h1,
 h2,
@@ -20,6 +28,7 @@ html {
 body {
     font-family: "Poppins", Arial, Helvetica, sans-serif;
     color: #222222;
+    background-color: #dee2e6;
 }
 
 ul {
@@ -51,7 +60,7 @@ img {
 }
 
 .superinfo-bg {
-    background-color: #3483dd;
+    background-color: var(--azulforte);
     color: white;
 }
 
@@ -75,7 +84,7 @@ img {
 
 /*MENU*/
 .menu-bg {
-    background-color: #86cbe9;
+    background-color: var(--azulfraco);
 }
 
 .menu {
@@ -119,12 +128,12 @@ img {
     left: 0;
     height: 2px;
     width: 0;
-    background: linear-gradient(90deg, #86cbe9, #3483dd);
+    background: linear-gradient(90deg, var(--azulfraco_novo), var(--azulforte_novo));
     transition: width 0.5s ease;
 }
 
 .menu-nav a:hover {
-    color: #3483dd;
+    color: var(--azulforte_novo);
 }
 .menu-link:hover::after {
     width: 100%;
@@ -141,7 +150,7 @@ img {
 }
 
 .sobre {
-    border-top: 2px solid #3483dd;
+    border-top: 2px solid var(--azulforte_novo);
     max-width: 1000px;
     margin: 0 auto;
     padding: 60px 0;
@@ -159,16 +168,21 @@ img {
 }
 
 .sobre-info p {
-    font-size: 1.25em;
-    line-height: 1.4;
+    font-size: 1.3em;
+    line-height: 1.5;
     margin-bottom: 1em;
-    color: #7c7c7c;
+
+    color: #696969;
 }
 
 .sobre-img {
     flex: 1 1 160px;
     margin: 0 10px;
     margin-bottom: 100px;
+    height: 100%;
+    width: 0px;
+    font-weight: 800;
+    margin: 0 auto;
 
 }
 
@@ -176,7 +190,7 @@ img {
 .planos-assinatura {
     padding: 60px 20px;
     text-align: center;
-    background-color: #f8f9fa;
+    background-color: #e5e8ed;
     /* Fundo levemente cinza */
 }
 
@@ -203,7 +217,7 @@ img {
 }
 
 .card-plano {
-    background-color: #ffffff;
+    background-color: #fafbfc;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     padding: 30px;
@@ -229,7 +243,7 @@ img {
 
 .titulo-plano {
     font-size: 1.5em;
-    color: #1bb2f4;
+    color: var(--azulforte  );
     /* Cor primária */
     margin-bottom: 10px;
 }
@@ -299,21 +313,22 @@ img {
 }
 
 .btn-principal {
-    background-color: #3483dd;
+    background-color: var(--azulforte);
     /* Azul */
     color: #ffffff;
-    border: 2px solid #3483dd;
+    border: 2px solid var(--azulforte);
 }
 
 .btn-principal:hover {
-    background-color: #2f70bb;
+    background-color: var(--azulforte_novo);
 }
 
 .btn-secundario {
     background-color: #ffffff;
-    color: #1bb2f4;
-    border: 2px solid #86cbe9;
-}
+    color: #3fb5e7;
+    border: 3px solid #3fb5e7;
+    font-weight: bold;
+}   
 
 .btn-secundario:hover {
     background-color: #e9ecef;
@@ -349,7 +364,7 @@ img {
 }
 
 .qualidade-item h2 {
-    font-size: 2.25em;
+    font-size: 2em;
     color: #646363;
     margin-bottom: 10px;
 }
@@ -360,18 +375,18 @@ img {
     width: 8px;
     height: 30px;
     margin-right: 10px;
-    background-color: #86cbe9;
+    background-color: var(--azulfraco_novo);
 }
 
 .qualidade-item p {
-    font-size: 1.25em;
+    font-size: 1em;
     line-height: 1.4;
     color: #7c7c7c;
 }
 
 /*newsletter*/
 .newsletter {
-    background-color: #f7f7f7;
+    background-color: #eef1f5;
     padding: 60px calc((100% - 1000px) / 2);
     display: flex;
     flex-wrap: wrap;
@@ -405,7 +420,7 @@ img {
     color: #7c7c7c;
     font-style: italic;
     font-family: 'Poppins';
-    border: 4px solid #3483dd;
+    border: 4px solid var(--azulforte_novo);
     background: transparent;
     padding: 10px;
     margin: 0px;
@@ -417,16 +432,16 @@ img {
     font-weight: bold;
     text-transform: uppercase;
     font: 2em;
-    background-color: #3483dd;
+    background-color: var(--azulforte_novo);
     color: white;
     margin: 0;
     cursor: pointer;
-    border: 1px solid #3483dd;
+    border: 1px solid var(--azulforte_novo);
 }
 
 .footer {
     display: flex;
-    background-color: #3483dd;
+    background-color: var(--azulforte_novo);
     height: 50px;
     align-items: center;
 }
