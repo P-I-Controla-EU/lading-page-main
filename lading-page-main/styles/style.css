@@ -5,6 +5,9 @@ body,h1,h2,p,ul,li,a{
     margin: 0px;
     padding: 0px;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: "Poppins", Arial, Helvetica, sans-serif;
     color: #222222;
@@ -27,13 +30,13 @@ img{
 }
 
 .texto-verde{
-    color: #38a37f;
+    color: #0fb158;
 }
 .texto-vermelho{
     color: #ff5757;
 }
 .superinfo-bg{
-    background-color: #5e78ff;
+    background-color: #3483dd;
     color: white;
 }
 .superinfo{
@@ -52,7 +55,7 @@ img{
 }
 /*MENU*/
 .menu-bg{
-    background-color: #1bb2f4;
+    background-color: #86cbe9;
 }
 .menu{
     max-width: 1000px;
@@ -81,7 +84,7 @@ img{
     padding: 15px;
 }
 .menu-nav a:hover{
-    color: #5e78ff;
+    color: #3483dd;
 }
 /*sobre*/
 .introducao{
@@ -93,7 +96,7 @@ img{
     padding: 60px 10px;
 }
 .sobre{
-    border-top: 2px solid #5e78ff;
+    border-top: 2px solid #3483dd;
     max-width: 1000px;
     margin: 0 auto;
     padding: 60px 0;
@@ -210,17 +213,17 @@ img{
     margin-top: auto; /* Alinha o botão na base do card */
 }
 .btn-principal {
-    background-color: #1bb2f4; /* Azul */
+    background-color: #86cbe9; /* Azul */
     color: #ffffff;
-    border: 2px solid #1bb2f4;
+    border: 2px solid #86cbe9;
 }
 .btn-principal:hover {
-    background-color: #5e78ff;
+    background-color: #3483dd;
 }
 .btn-secundario {
     background-color: #ffffff;
     color: #1bb2f4;
-    border: 2px solid #1bb2f4;
+    border: 2px solid #86cbe9;
 }
 
 .btn-secundario:hover {
@@ -231,7 +234,7 @@ img{
     top: -15px; /* Posição acima do card */
     left: 50%;
     transform: translateX(-50%);
-    background-color: #f73f51d5; /* Cor de destaque (vermelho) */
+    background-color: #fa2d42d5; /* Cor de destaque (vermelho) */
     color: white;
     padding: 5px 15px;
     border-radius: 50px;
@@ -261,7 +264,7 @@ img{
     width: 8px;
     height: 30px;
     margin-right:10px ;
-    background-color: #1bb2f4;
+    background-color: #86cbe9;
 }
 .qualidade-item p{
     font-size: 1.25em;
@@ -300,7 +303,7 @@ img{
     color: #7c7c7c;
     font-style: italic;
     font-family: 'Poppins';
-    border: 4px solid #1bb2f4;
+    border: 4px solid #86cbe9;
     background: transparent;
     padding: 10px;
     margin: 0px;
@@ -311,14 +314,14 @@ img{
     font-weight: bold;
     text-transform: uppercase;
     font: 2.25em;
-    background-color: #1bb2f4;
+    background-color: #86cbe9;
     color: white;
     margin: 0;
     cursor: pointer;
 }
 .footer{
     display: flex;
-    background-color: #1bb2f4;
+    background-color: #86cbe9;
     height: 50px;
     align-items: center;
 }
