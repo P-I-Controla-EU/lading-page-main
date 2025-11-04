@@ -39,16 +39,52 @@ a {
     text-decoration: none;
 
 }
-
-img {
+img{
     display: block;
     max-width: 100%;
-    width: 100%;
+    width: 100%; 
     height: auto;
 }
-
-* {
+*{
     box-sizing: border-box;
+}
+.icone img{
+    width:"64px";
+    height: "64px";
+}
+.card-criar-conta{
+   background-color: #ffffff;
+    border-radius: 12px;
+    padding: 100px;
+    width: 100%; /* Por padrão */
+    max-width: 500px; /* Largura máxima para desktop */
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    
+}  
+.card-criar-conta:hover {
+    transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+.card-login:hover {
+    transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+.card-login {
+ background-color: #ffffff;
+    border-radius: 12px;
+    padding: 100px;
+    width: 100%; /* Por padrão */
+    max-width: 500px; /* Largura máxima para desktop */
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    
+    
+    
 }
 
 .texto-verde {
@@ -191,8 +227,7 @@ img {
 .planos-assinatura {
     padding: 60px 20px;
     text-align: center;
-    background-color: #e5e8ed;
-    /* Fundo levemente cinza */
+    background-color: #f8f9fa; /* Fundo levemente cinza */
 }
 
 .planos-assinatura h1 {
@@ -446,6 +481,7 @@ img {
     background-color: var(--azulforte_novo);
     height: 50px;
     align-items: center;
+    margin-top: 100px;
 }
 
 .footer p {
