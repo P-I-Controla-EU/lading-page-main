@@ -235,10 +235,10 @@ img {
 .desconto-anual {
     font-size: 0.9em;
     color: #38a37f;
+    font-weight: bolder;
     /* Cor verde para desconto */
     margin-top: -10px;
     margin-bottom: 20px;
-    font-weight: 500;
 }
 
 .lista-beneficios {
