@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 body,
 h1,
 h2,
@@ -43,7 +44,8 @@ img {
 .texto-verde {
     color: #2bb688;
 }
-.text-verde-s{
+
+.text-verde-s {
     color: #36dfa6;
 }
 
@@ -632,4 +634,184 @@ img {
         flex-direction: column;
         align-items: center;
     }
+}
+
+/* teste de estilo botao cadastro*/
+.nav-buttons {
+    display: flex;
+    gap: 25px;
+    margin-left: auto;
+    margin-left: 160px;
+    /* empurra os botões pro canto direito */
+}
+
+.btn-ready {
+    --white: #ffffff;
+    --glow: rgba(255, 255, 255, 0.4) font-size: 15px;
+    padding: 0.7em 2em;
+    letter-spacing: 0.06em;
+    position: relative;
+    font-family: inherit;
+    border-radius: 0.6em;
+    overflow: hidden;
+    transition: all 0.3s;
+    line-height: 1.4em;
+    border: 2px solid var(--white);
+    background: linear-gradient(to right,
+            rgba(255, 255, 255, 0.1) 1%,
+            transparent 40%,
+            transparent 60%,
+            rgba(255, 255, 255, 0.1) 100%);
+    color: var(--white);
+    box-shadow: inset 0 0 10px var(--glow),
+        0 0 9px 3px rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+.btn-ready:hover {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 0 15px rgba(255, 255, 255, 0.6),
+        0 0 12px 4px rgba(255, 255, 255, 0.2);
+    transform: scale(1.03);
+
+}
+
+.btn-ready::before {
+    content: "";
+    position: absolute;
+    left: -4em;
+    width: 4em;
+    height: 100%;
+    top: 0;
+    transition: transform 0.4s ease-in-out;
+    background: linear-gradient(to right,
+            transparent 1%,
+            rgba(255, 255, 255, 0.2) 40%,
+            rgba(255, 255, 255, 0.2) 60%,
+            transparent 100%);
+}
+
+.btn-ready:hover::before {
+    transform: translateX(15em);
+}
+
+/* garante que os botões no nav fiquem iguais e não sejam afetados por .menu-nav a */
+.nav-buttons a.btn-ready,
+.nav-buttons .btn-ready {
+    display: inline-flex;
+    /* inline-flex para poder usar alinhamento vertical */
+    align-items: center;
+    /* centraliza texto verticalmente */
+    justify-content: center;
+    gap: 10px;
+    /* espaço interno entre ícone/texto se quiser adicionar */
+    box-sizing: border-box;
+    /* padding incluído no tamanho */
+    vertical-align: middle;
+    text-decoration: none;
+    /* remove sublinhado */
+    line-height: 1.2;
+    /* controla altura da linha */
+    height: auto;
+    /* não deixar fixo, a menos que queira */
+    min-height: 40px;
+    /* garante área clicável */
+    padding: 0.7em 2em;
+    /* mesmo padding do botão */
+    border-radius: 0.6em;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.25s ease;
+    cursor: pointer;
+    color: inherit;
+    margin-left: 30px;
+    /* ou force a cor abaixo */
+}
+
+/* copia seu estilo branco (ou ajuste conforme estiver usando) */
+.nav-buttons a.btn-ready {
+    --white: #ffffff;
+    --glow: rgba(255, 255, 255, 0.4);
+    border: 2px solid var(--white);
+    background: linear-gradient(to right,
+            rgba(255, 255, 255, 0.1) 1%,
+            transparent 40%,
+            transparent 60%,
+            rgba(255, 255, 255, 0.1) 100%);
+    color: var(--white) !important;
+    /* !important só aqui se outros estilos estiverem sobrescrevendo */
+    box-shadow: inset 0 0 10px var(--glow), 0 0 9px 3px rgba(255, 255, 255, 0.1);
+}
+
+/* hover */
+.nav-buttons a.btn-ready:hover {
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: inset 0 0 15px rgba(255, 255, 255, 0.6), 0 0 12px 4px rgba(255, 255, 255, 0.2);
+    transform: scale(1.02);
+}
+
+/* animação do brilho — usar seletor específico para garantir aplicação */
+.nav-buttons a.btn-ready::before {
+    content: "";
+    position: absolute;
+    left: -4em;
+    width: 4em;
+    height: 100%;
+    top: 0;
+    transition: transform 0.4s ease-in-out;
+    background: linear-gradient(to right,
+            transparent 1%,
+            rgba(255, 255, 255, 0.2) 40%,
+            rgba(255, 255, 255, 0.2) 60%,
+            transparent 100%);
+    pointer-events: none;
+    /* evita interferir no clique */
+    z-index: 0;
+}
+
+/* garante que o texto fique acima do ::before */
+.nav-buttons a.btn-ready>span,
+.nav-buttons a.btn-ready {
+    position: relative;
+    z-index: 1;
+}
+
+/* animação hover do ::before */
+.nav-buttons a.btn-ready:hover::before {
+    transform: translateX(15em);
+}
+
+/* garante que .menu-nav a não afete os botões (mais específico) */
+.menu-nav a.btn-ready {
+    padding: 0.7em 2em;
+    display: inline-flex;
+}
+
+/* espaçamento do container — ajuste a distância do canto direito */
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+    margin-left: auto;
+    margin-right: 40px;
+    /* ajuste aqui para afastar mais */
+}
+
+/* versão mobile: empilha / reduz padding */
+@media (max-width: 768px) {
+    .nav-buttons {
+        gap: 10px;
+        margin-right: 16px;
+    }
+
+    .nav-buttons a.btn-ready {
+        padding: 0.5em 1em;
+        font-size: 14px;
+    }
+}
+
+.menu-nav a.btn-ready::after {
+    display: none !important;
+    content: none !important;
 }
