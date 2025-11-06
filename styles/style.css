@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 body,
 h1,
 h2,
@@ -85,7 +87,7 @@ img {
 }
 
 .menu a {
-    color: white;
+    color: #fafafae5;
 }
 
 .menu-logo {
@@ -103,10 +105,29 @@ img {
     font-size: 1.25em;
     display: block;
     padding: 15px;
+    position: relative;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .menu-nav a:hover {
-    color: #5e78ff;
+    color: #ffffff;
+}
+
+.menu-nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.menu-nav a:hover::after {
+    width: 60%;
 }
 
 /*sobre*/
@@ -470,4 +491,142 @@ img {
 .card-plano {
     padding-bottom: 100px;
     position: relative;
+}
+
+/*fundadores*/
+.fundadores {
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.titulo-fundadores {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #1b1b1b;
+    font-family: "Raleway";
+}
+
+.descricao-fundadores {
+    font-size: 1.2em;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+    font-style: italic;
+}
+
+.container-fundadores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    text-align: center;
+}
+
+.card-fundador {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 30px 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    /* centralização */
+    display: flex;
+    /* ativa o flexbox */
+    flex-direction: column;
+    /* organiza os filhos em coluna */
+    justify-content: center;
+    /* centraliza verticalmente */
+    align-items: center;
+    /* centraliza horizontalmente */
+    text-align: center;
+    /* centraliza textos */
+}
+
+
+.card-fundador:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-fundador img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 2.7px solid #1bb2f4;
+    text-align: center;
+}
+
+.card-fundador h2 {
+    font-size: 1.8rem;
+    color: #1bb2f4;
+    margin-bottom: 5px;
+}
+
+.card-fundador h3 {
+    font-size: 0.95rem;
+    color: #777;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.card-fundador p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* Botões sociais */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    margin-top: 10px;
+
+}
+
+.btn-social {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border-radius: 30px;
+    padding: 8px 14px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-social i {
+    font-size: 1rem;
+}
+
+.btn-social.github {
+    background-color: #24292e;
+    color: #fff;
+}
+
+.btn-social.github:hover {
+    background-color: #000;
+    transform: scale(1.05);
+}
+
+.btn-social.linkedin {
+    background-color: #0077b5;
+    color: #fff;
+}
+
+.btn-social.linkedin:hover {
+    background-color: #005f8d;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .container-fundadores {
+        flex-direction: column;
+        align-items: center;
+    }
 }
