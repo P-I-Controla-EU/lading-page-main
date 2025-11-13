@@ -1,256 +1,320 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 
 <head>
-    <title>Controla$eu</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="imgs/logo-aba-att.png" />
+
+  <title>Controla$eu</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <link rel="stylesheet" href="styles/global.css" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    .logo img{
+      width: 90px;
+      height: auto;
+    }
+  </style>
 </head>
 
 <body>
-    <div class="superinfo-bg">
-        <div class="superinfo">
-            <p>Seg / Sex - 08:00 às 18:00</p>
-            <a href="tel:+5514997820033">+55 14 99782-0033</a>
-            <p>Fatec Jahu | Rua Frei Galvão, s/nº - Jardim Pedro Ometto</p>
-        </div>
+  <div class="stripe">
+    <div class="stripe-content">
+      <p>Seg / Sex - 08:00 às 18:00</p>
+      <p>+55 14 99782-0033</p>
+      <p>Fatec Jahu | Rua Frei Galvão, s/nº - Jardim Pedro Ometto</p>
     </div>
+  </div>
 
-    <header class="menu-bg">
-        <div class="menu">
-            <div class="menu-logo">
-                <a href="index.html">Controla<span class="text-verde-s">$</span>EU</a>
-            </div>
-            <nav class="menu-nav">
-                <ul>
-                    <li><a href="#sobre" class="menu-link">Sobre</a></li>
-                    <li><a href="#contato" class="menu-link">Contato</a></li>
-                    <li><a href="#assinatura" class="menu-link">Assinatura</a></li>
-                    <li><a href="#quem" class="menu-link">Quem somos nós?</a></li>
-                    <div class="nav-buttons">
-                        <a href="cadastro.html" class="btn-ready">Cadastro</a>
-                        <a href="login.html" class="btn-ready">Login</a>
-                    </div>
-                </ul>
-            </nav>
+  <header class="header">
+    <div class="header-container">
+      <div class="header-left">
+        <div class="logo">
+          <a href="index.html">
+            <img src="imgs/img-home-logo.png" alt="Logo Controla$EU" width="120" height="auto">
+          </a>
         </div>
-    </header>
 
-    <h1 class="introducao">
-        <span class="texto-verde">MAIS</span> controle <br>
-        <span class="texto-vermelho">MENOS</span> surpresas <br>
-        <span class="texto-verde">MAIS</span> dinheiro no seu bolso.
-    </h1>
-
-    <section class="sobre" id="sobre">
-        <div class="sobre-info">
-            <h1>Sobre</h1>
-            <p>O projeto <strong>Controla<span class="texto-verde">$</span>eu</strong> nasceu da observação de um
-                problema comum: a gestão financeira parece complexa,
-                intimidadora e, muitas vezes, é deixada de lado, especialmente por jovens e pequenos empreendedores que
-                estão começando a construir seu futuro financeiro.</p>
-            <p>Nossa Missão é desmistificar o mundo das finanças, transformando a tarefa de controlar o dinheiro em algo
-                simples, intuitivo e até prazeroso.</p>
+        <nav class="nav-links">
+          <a href="#sobre">Sobre</a>
+          <a href="#contato">Contato</a>
+          <a href="#assinatura">Assinatura</a>
+          <a href="#quem">Quem somos nós?</a>
+        </nav>
+        <div class="cta-buttons-mobile">
+          <a href="login.html" class="login-btn">Login</a>
+          <a href="cadastro.html" class="signup-btn">Cadastro</a>
         </div>
-        <div class="sobre-img">
-            <img src="imgs/pngtree-the-finance-department-employees-are-calculating-the-expenses-of-the-company-png-image_7259337.png"
-                alt="Sobre 2">
+        <div class="cta-buttons">
+          <a href="login.html" class="login-btn">Login</a>
+          <a href="cadastro.html" class="signup-btn">Cadastro</a>
         </div>
-    </section>
+      </div>
 
-    <section class="planos-assinatura" id="assinatura">
-        <h1>Escolha o plano que mais combina com você!</h1>
-        <div class="assinatura-container">
-
-            <div class="card-plano essencial">
-                <h3 class="titulo-plano">FREE</h3>
-                <p class="slogan-plano">Começe a controlar hoje mesmo.</p>
-                <div class="preco">
-                    <span class="valor">R$0,00</span>
-                    <span class="periodicidade">/mês</span>
-                </div>
-                <ul class="lista-beneficios">
-                    <li><i class="fas fa-check"></i> Lançamentos Limitados (50/mês)</li>
-                    <li><i class="fas fa-check"></i> Gerencie 1 conta bancária</li>
-                    <li><i class="fas fa-check"></i> Categorias Padrão</li>
-                    <li><i class="fas fa-check"></i> Suporte via FAQ</li>
-                </ul>
-                <div class="btn-svg-container">
-                    <button class="btn-svg">
-                        <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
-                            <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
-                            <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
-                        </svg>
-                        <span>Experimentar Grátis</span>
-                    </button>
-                </div>
-            </div>
-
-            <div class="card-plano premium">
-                <div class="etiqueta"><strong>MAIS POPULAR</strong></div>
-                <h3 class="titulo-plano">PREMIUM</h3>
-                <p class="slogan-plano">Controle total para atingir suas metas.</p>
-                <div class="preco">
-                    <span class="valor">R$19,90</span>
-                    <span class="periodicidade">/mês</span>
-                </div>
-                <p class="desconto-anual">Economize com o Plano Anual.</p>
-                <ul class="lista-beneficios">
-                    <li><i class="fas fa-check"></i> Lançamentos Ilimitados</li>
-                    <li><i class="fas fa-check"></i> Gerencie até 5 contas</li>
-                    <li><i class="fas fa-check"></i> Criação de Categorias Personalizadas</li>
-                    <li><i class="fas fa-check"></i> Criação e Alerta de Orçamento</li>
-                    <li><i class="fas fa-check"></i> Relatórios Detalhados e Históricos</li>
-                    <li><i class="fas fa-check"></i> Suporte por Email (24h)</li>
-                </ul>
-                <div class="btn-svg-container">
-                    <button class="btn-svg">
-                        <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
-                            <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
-                            <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
-                        </svg>
-                        <span>Assinar Agora</span>
-                    </button>
-                </div>
-            </div>
-
-            <div class="card-plano ultimate">
-                <h3 class="titulo-plano">ULTIMATE</h3>
-                <p class="slogan-plano">Tudo o que você precisa, sem limites.</p>
-                <div class="preco">
-                    <span class="valor">R$39,90</span>
-                    <span class="periodicidade">/mês</span>
-                </div>
-                <ul class="lista-beneficios">
-                    <li><i class="fas fa-check"></i> Lançamentos Ilimitados</li>
-                    <li><i class="fas fa-check"></i> Contas Ilimitadas (PJ/MEI)</li>
-                    <li><i class="fas fa-check"></i> Centro de Custo e Orçamento Recorrente</li>
-                    <li><i class="fas fa-check"></i> Relatórios Exportáveis (PDF/Excel)</li>
-                    <li><i class="fas fa-check"></i> Acesso para Colaboradores/Sócios</li>
-                    <li><i class="fas fa-check"></i> Suporte Prioritário (Chat)</li>
-                </ul>
-                <div class="btn-svg-container">
-                    <button class="btn-svg">
-                        <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
-                            <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
-                            <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
-                        </svg>
-                        <span>Assinar Agora</span>
-                    </button>
-                </div>
-            </div>
+      <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-    </section>
+      </button>
+    </div>
+  </header>
 
-    <section class="qualidade">
-        <div class="qualidade-item">
-            <h2>Controle Total de Receitas e Despesas</h2>
-            <p>Registre e visualize todas as suas entradas e saídas financeiras de forma rápida. Mantenha um
-                acompanhamento detalhado de todas as suas transações.</p>
-        </div>
-        <div class="qualidade-item">
-            <h2>Organização Inteligente com Categorias</h2>
-            <p>Personalize categorias, subcategorias e tags para classificar cada transação do seu jeito.</p>
-        </div>
-        <div class="qualidade-item">
-            <h2>Orçamentos Mensais e Anuais sem Complicação</h2>
-            <p>Crie limites de gastos para cada categoria e receba alertas automáticos quando estiver perto do teto.</p>
-        </div>
-        <div class="qualidade-item">
-            <h2>Defina e Alcance Seus Objetivos Financeiros</h2>
-            <p>Estabeleça metas de economia ou de investimento e acompanhe seu progresso de forma visual.</p>
-        </div>
-        <div class="qualidade-item">
-            <h2>Nunca Mais Esqueça Uma Conta</h2>
-            <p>Receba lembretes automáticos sobre contas e movimentações importantes.</p>
-        </div>
-        <div class="qualidade-item">
-            <h2>Seus Dados, Nossa Prioridade Máxima</h2>
-            <p>Segurança de nível bancário com autenticação de dois fatores (2FA) e criptografia completa.</p>
-        </div>
-    </section>
+  <div class="mobile-menu-overlay"></div>
 
-    <section class="fundadores" id="quem">
-        <h1 class="titulo-fundadores">Quem Somos Nós</h1>
-        <p class="descricao-fundadores">
-            Conheça a equipe por trás do Controla<span class="texto-verde">$</span>EU — unindo tecnologia, finanças e
-            inovação para transformar sua vida financeira.
-        </p>
-        <div class="container-fundadores">
-            <div class="card-fundador">
-                <img src="imgs/arthur.jpeg" alt="Foto de Arthur Cabral">
-                <h2>Arthur B. Cabral</h2>
-                <h3>posicao</h3>
-                <p>funcao.</p>
-                <div class="social-links">
-                    <a href="https://github.com/Abcabral827" target="_blank" class="btn-social github"><i
-                            class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/arthur-cabral-967664332/" target="_blank"
-                        class="btn-social linkedin"><i class="fab fa-linkedin"></i></a>
-                </div>
-            </div>
+  <h1 class="introducao">
+    <span class="texto-verde" style="color: #0f865b;">MAIS</span> controle <br />
+    <span class="texto-vermelho">MENOS</span> surpresas <br />
+    <span class="texto-verde" style="color: #0d714d;">MAIS</span> dinheiro no seu bolso.
+  </h1>
 
-            <div class="card-fundador">
-                <img src="imgs/campanha.jpeg" alt="Foto de Gabriel Campanhã">
-                <h2>Gabriel Campanhã</h2>
-                <h3>posicao</h3>
-                <p>funcao.</p>
-                <div class="social-links">
-                    <a href="https://github.com/GabrielCampas/" target="_blank" class="btn-social github"><i
-                            class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/gabriel-campanh%C3%A3-31abb8380/" target="_blank"
-                        class="btn-social linkedin"><i class="fab fa-linkedin"></i></a>
-                </div>
-            </div>
+  <section class="sobre" id="sobre">
+    <div class="sobre-info">
+      <h1>Sobre</h1>
+      <p>
+        O projeto
+        <strong>Controla<span class="texto-verde">$</span>eu</strong> nasceu
+        da observação de um problema comum: a gestão financeira parece
+        complexa, intimidadora e, muitas vezes, é deixada de lado,
+        especialmente por jovens e pequenos empreendedores que estão começando
+        a construir seu futuro financeiro.
+      </p>
+      <p>
+        Nossa Missão é desmistificar o mundo das finanças, transformando a
+        tarefa de controlar o dinheiro em algo simples, intuitivo e até
+        prazeroso.
+      </p>
+    </div>
+    <div class="sobre-img">
+      <img
+        src="imgs/pngtree-the-finance-department-employees-are-calculating-the-expenses-of-the-company-png-image_7259337.png"
+        alt="Sobre 2" />
+    </div>
+  </section>
 
-            <div class="card-fundador">
-                <img src="imgs/pereira.jpeg" alt="Foto de Guilherme Pereira">
-                <h2>Guilherme Pereira</h2>
-                <h3>posicao</h3>
-                <p>funcao.</p>
-                <div class="social-links">
-                    <a href="https://github.com/guipereiradev" target="_blank" class="btn-social github"><i
-                            class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/guilhermeclaropereira" target="_blank"
-                        class="btn-social linkedin"><i class="fab fa-linkedin"></i></a>
-                </div>
-            </div>
+  <section class="planos-assinatura" id="assinatura">
+    <h1>Escolha o plano que mais combina com você!</h1>
+    <div class="assinatura-container">
+      <div class="card-plano essencial">
+        <h3 class="titulo-plano">FREE</h3>
+        <p class="slogan-plano">Começe a controlar hoje mesmo.</p>
 
-            <div class="card-fundador">
-                <img src="imgs/joaog.jpeg" alt="Foto de João G. Pascolat">
-                <h2>João G. Pascolat</h2>
-                <h3>posicao</h3>
-                <p>funcao.</p>
-                <div class="social-links">
-                    <a href="https://github.com/joaoguidias" target="_blank" class="btn-social github"><i
-                            class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/jo%C3%A3o-guilherme-dias-pascolat-599a88242/" target="_blank"
-                        class="btn-social linkedin"><i class="fab fa-linkedin"></i></a>
-                </div>
-            </div>
+        <div class="preco">
+          <span class="valor">R$0,00</span>
+          <span class="periodicidade">/mês</span>
         </div>
-    </section>
 
-    <!-- 🔽 NOVA NEWSLETTER AQUI -->
-    <section class="newsletter">
-        <div class="newsletter-info">
-            <h1>Boletim Informativo</h1>
-            <p>Assine e fique por dentro das novidades.</p>
-            <form class="newsletter-form">
-                <input type="text" placeholder="Seu e-mail">
-                <button type="submit"><i class="fas fa-envelope"></i> Assinar</button>
-            </form>
-                </a>
-            </div>
+        <ul class="lista-beneficios">
+          <li><i class="fas fa-check"></i> Lançamentos Limitados (50/mês)</li>
+          <li><i class="fas fa-check"></i> Gerencie 1 conta bancária</li>
+          <li><i class="fas fa-check"></i> Categorias Padrão</li>
+          <li><i class="fas fa-check"></i> Suporte via FAQ</li>
+        </ul>
+
+        <div class="btn-svg-container">
+          <button class="btn-svg">
+            <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+              <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line"></polyline>
+              <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line"></polyline>
+            </svg>
+            <span>Experimentar Grátis</span>
+          </button>
         </div>
-    </section>
-    <!-- 🔼 FIM DA NEWSLETTER -->
+      </div>
 
-    <footer class="footer">
-        <p>Controla$EU © Todos os direitos reservados.</p>
-    </footer>
+      <div class="card-plano premium">
+        <div class="etiqueta"><strong>MAIS POPULAR</strong></div>
+        <h3 class="titulo-plano">PREMIUM</h3>
+        <p class="slogan-plano">Controle total para atingir suas metas.</p>
+
+        <div class="preco">
+          <span class="valor">R$19,90</span>
+          <span class="periodicidade">/mês</span>
+        </div>
+        <p class="desconto-anual">Economize com o Plano Anual.</p>
+
+        <ul class="lista-beneficios">
+          <li><i class="fas fa-check"></i> Lançamentos Ilimitados</li>
+          <li><i class="fas fa-check"></i> Gerencie até 5 contas</li>
+          <li><i class="fas fa-check"></i> Categorias Personalizadas</li>
+          <li><i class="fas fa-check"></i> Alerta de Orçamento</li>
+          <li><i class="fas fa-check"></i> Relatórios Detalhados</li>
+          <li><i class="fas fa-check"></i> Suporte por Email (24h)</li>
+        </ul>
+
+        <div class="btn-svg-container">
+          <a href="pagamento.html" class="btn-svg">
+            <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+              <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line"></polyline>
+              <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line"></polyline>
+            </svg>
+            <span>Assinar Agora</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="card-plano ultimate">
+        <h3 class="titulo-plano">ULTIMATE</h3>
+        <p class="slogan-plano">Tudo o que você precisa, sem limites.</p>
+
+        <div class="preco">
+          <span class="valor">R$39,90</span>
+          <span class="periodicidade">/mês</span>
+        </div>
+
+        <ul class="lista-beneficios">
+          <li><i class="fas fa-check"></i> Lançamentos Ilimitados</li>
+          <li><i class="fas fa-check"></i> Contas Ilimitadas (PJ/MEI)</li>
+          <li><i class="fas fa-check"></i> Orçamento Recorrente</li>
+          <li><i class="fas fa-check"></i> Relatórios Exportáveis</li>
+          <li><i class="fas fa-check"></i> Acesso a Colaboradores</li>
+          <li><i class="fas fa-check"></i> Suporte Prioritário (Chat)</li>
+        </ul>
+
+        <div class="btn-svg-container">
+          <a href="pagamento.html" class="btn-svg">
+            <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+              <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line"></polyline>
+              <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line"></polyline>
+            </svg>
+            <span>Assinar Agora</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="fundadores" id="quem">
+    <h1 class="titulo-fundadores">Quem Somos Nós</h1>
+    <p class="descricao-fundadores">
+      Conheça a equipe por trás do Controla<span class="texto-verde">$</span>EU — unindo tecnologia, finanças e inovação
+      para transformar sua vida
+      financeira.
+    </p>
+
+    <div class="container-fundadores">
+      <div class="card-fundador">
+        <img src="imgs/arthur.jpeg" alt="Foto de Arthur Cabral" />
+        <h2>Arthur B. Cabral</h2>
+        <h3>Posição</h3>
+        <p>Função</p>
+        <div class="social-links">
+          <a href="https://github.com/Abcabral827" target="_blank" class="btn-social github">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/arthur-cabral-967664332/" target="_blank" class="btn-social linkedin">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="card-fundador">
+        <img src="imgs/campanha.jpeg" alt="Foto de Gabriel Campanhã" />
+        <h2>Gabriel Campanhã</h2>
+        <h3>Posição</h3>
+        <p>Função</p>
+        <div class="social-links">
+          <a href="https://github.com/GabrielCampas/" target="_blank" class="btn-social github">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/gabriel-campanh%C3%A3-31abb8380/" target="_blank"
+            class="btn-social linkedin">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="card-fundador">
+        <img src="imgs/pereira.jpeg" alt="Foto de Guilherme Pereira" />
+        <h2>Guilherme Pereira</h2>
+        <h3>Posição</h3>
+        <p>Função</p>
+        <div class="social-links">
+          <a href="https://github.com/guipereiradev" target="_blank" class="btn-social github">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/guilhermeclaropereira" target="_blank" class="btn-social linkedin">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="card-fundador">
+        <img src="imgs/joaog.jpeg" alt="Foto de João G. Pascolat" />
+        <h2>João G. Pascolat</h2>
+        <h3>Posição</h3>
+        <p>Função</p>
+        <div class="social-links">
+          <a href="https://github.com/joaoguidias" target="_blank" class="btn-social github">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/jo%C3%A3o-guilherme-dias-pascolat-599a88242/" target="_blank"
+            class="btn-social linkedin">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="fundadores" id="quem">
+  </section>
+
+  <section class="contato" id="contato">
+    <div class="contato-container">
+      <h1>Entre em Contato.</h1>
+      <p>Fale conosco pelos canais abaixo. Estamos prontos para ajudar!</p>
+
+      <div class="contato-info">
+        <div class="info-item">
+          <i class="fa-solid fa-phone"></i>
+          <p><strong>Telefone:</strong> +55 (14) 99782-0033</p>
+        </div>
+
+        <div class="info-item">
+          <i class="fa-solid fa-envelope"></i>
+          <p><strong>Email:</strong> contato@controlaseu.com</p>
+        </div>
+
+        <div class="info-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <p><strong>Endereço:</strong> Fatec Jahu — Rua Frei Galvão, s/nº - Jardim Pedro Ometto, Jaú/SP</p>
+        </div>
+      </div>
+
+      <div class="contato-form">
+        <form action="#" method="post">
+          <input type="email" name="email" placeholder="Seu e-mail" required>
+          <textarea name="mensagem" placeholder="Digite sua mensagem..." rows="5" required></textarea>
+          <button type="submit" class="btn-enviar">
+            <i class="fa-solid fa-paper-plane"></i> ENVIAR EMAIL
+          </button>
+        </form>
+      </div>
+
+      <!--
+      <div class="contato-redes">
+        <a href="https://wa.me/5514997820033" target="_blank" class="btn-contato whatsapp">
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp
+        </a>
+        
+        <a href="mailto:contato@controlaseu.com" class="btn-contato email">
+          <i class="fa-solid fa-envelope"></i> Enviar Email
+        </a>
+        -->
+    </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Controla$EU © Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="js/common.js"></script>
 </body>
 
 </html>
