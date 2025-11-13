@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formas de Pagamento</title>
+
+  <!-- Fonte Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <style>
+    :root {
+      --color-primary: #007bff;
+      --color-secondary: #0056b3;
+      --color-bg-light: #f5f7fa;
+      --color-white: #fff;
+      --color-text: #222;
+      --color-text-muted: #555;
+      --transition-base: 0.3s ease;
+      --max-width: 1200px;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--color-bg-light);
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .payment-section {
+      text-align: center;
+      background: var(--color-white);
+      border-radius: 14px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      padding: 60px 40px;
+      max-width: 700px;
+      width: 90%;
+      transition: transform var(--transition-base), box-shadow var(--transition-base);
+    }
+
+    .payment-section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    }
+
+    .payment-section h1 {
+      font-size: 2rem;
+      color: var(--color-primary);
+      margin-bottom: 40px;
+      font-weight: 700;
+    }
+
+    .payment-options {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 35px;
+    }
+
+    .payment-option {
+      background: var(--color-white);
+      border: 2px solid var(--color-primary);
+      border-radius: 10px;
+      width: 120px;
+      height: 120px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      color: var(--color-primary);
+      transition: background-color var(--transition-base), color var(--transition-base), transform var(--transition-base);
+    }
+
+    .payment-option i {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+
+    .payment-option span {
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .payment-option:hover {
+      background-color: var(--color-primary);
+      color: white;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 600px) {
+      .payment-section {
+        padding: 40px 20px;
+      }
+
+      .payment-section h1 {
+        font-size: 1.6rem;
+      }
+
+      .payment-option {
+        width: 100px;
+        height: 100px;
+      }
+
+      .payment-option i {
+        font-size: 1.8rem;
+      }
+
+      .payment-option span {
+        font-size: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="payment-section">
+    <h1>Formas de Pagamento</h1>
+    <div class="payment-options">
+      <a href="#" class="payment-option" title="Apple Pay">
+        <i class="fa-brands fa-apple-pay"></i>
+        <span>Apple Pay</span>
+      </a>
+      <a href="#" class="payment-option" title="Cartão de Crédito">
+        <i class="fa-solid fa-credit-card"></i>
+        <span>Cartão</span>
+      </a>
+      <a href="#" class="payment-option" title="Pix">
+        <i class="fa-solid fa-qrcode"></i>
+        <span>Pix</span>
+      </a>
+      <a href="#" class="payment-option" title="Boleto Bancário">
+        <i class="fa-solid fa-file-invoice"></i>
+        <span>Boleto</span>
+      </a>
+      <a href="#" class="payment-option" title="Google Pay">
+        <i class="fa-brands fa-google-pay"></i>
+        <span>Google Pay</span>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>

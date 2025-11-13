@@ -1,0 +1,283 @@
+/* ==========================================================================
+   AUTHENTICATION PAGES (LOGIN & REGISTER)
+   ========================================================================== */
+
+/* Specific styles for login.html and cadastro.html pages */
+/* Common components (header, footer, stripe) are in global.css */
+/* Bootstrap is used for forms */
+
+/* ==========================================================================
+   MAIN LAYOUT
+   ========================================================================== */
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--color-bg-light);
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif !important;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+/* ==========================================================================
+   BOOTSTRAP CUSTOMIZATIONS
+   ========================================================================== */
+
+/* Form card */
+.card {
+  border-radius: 12px;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.card-body {
+  padding: 3rem;
+}
+
+.card-title {
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Inputs */
+.form-label {
+  font-weight: 500;
+  color: var(--color-text);
+  margin-bottom: 0.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.form-control {
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  transition: border-color var(--transition-base),
+    box-shadow var(--transition-base);
+  font-family: 'Poppins', sans-serif;
+}
+
+.form-control:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 0.2rem rgba(27, 178, 244, 0.15);
+}
+
+/* Checkbox */
+.form-check-input:checked {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.form-check-input:focus {
+  box-shadow: 0 0 0 0.2rem rgba(27, 178, 244, 0.15);
+  border-color: var(--color-primary);
+}
+
+.form-check-label {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 6px;
+  transition: all var(--transition-base);
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--color-secondary);
+  border-color: var(--color-secondary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(27, 178, 244, 0.3);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+/* Links */
+.form-text a,
+a.text-decoration-none {
+  color: var(--color-primary);
+  font-weight: 500;
+  transition: color var(--transition-base);
+  font-family: 'Poppins', sans-serif;
+}
+
+.form-text {
+  font-family: 'Poppins', sans-serif;
+}
+
+.form-text a:hover,
+a.text-decoration-none:hover {
+  color: var(--color-secondary);
+  text-decoration: underline !important;
+}
+
+/* Terms of use link */
+.form-check-label a {
+  color: var(--color-primary);
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.form-check-label a:hover {
+  color: var(--color-secondary);
+}
+
+/* ==========================================================================
+   MESSAGES & FEEDBACK
+   ========================================================================== */
+
+.alert {
+  border-radius: 8px;
+  border: none;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.alert-success {
+  background-color: rgba(43, 182, 136, 0.1);
+  color: var(--color-success);
+}
+
+.alert-danger {
+  background-color: rgba(255, 87, 87, 0.1);
+  color: var(--color-danger);
+}
+
+/* ==========================================================================
+   ANIMATIONS
+   ========================================================================== */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* ==========================================================================
+   RESPONSIVE - MOBILE
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  main {
+    padding: 40px 15px;
+  }
+
+  .card-body {
+    padding: 2rem 1.5rem;
+  }
+
+  .card-title {
+    font-size: 1.75rem;
+  }
+
+  .form-control {
+    padding: 0.65rem 0.875rem;
+  }
+
+  .btn-primary {
+    padding: 0.65rem 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-body {
+    padding: 1.5rem 1rem;
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+  }
+
+  .form-label {
+    font-size: 0.9rem;
+  }
+
+  .form-control {
+    font-size: 0.9rem;
+    padding: 0.6rem 0.75rem;
+  }
+
+  .btn-primary {
+    font-size: 0.95rem;
+  }
+}
+
+/* ==========================================================================
+   ACCESSIBILITY IMPROVEMENTS
+   ========================================================================== */
+
+/* Improve contrast for links */
+.form-text {
+  color: #6c757d;
+}
+
+/* Visible focus for keyboard navigation */
+a:focus,
+button:focus,
+.form-control:focus,
+.form-check-input:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Hover states for better feedback */
+.card:hover {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12) !important;
+}
+.input-group-icon {
+  position: relative;
+  width: 100%;
+}
+
+.input-group-icon .form-control {
+  padding-left: 45px; /* espaço pro ícone */
+  height: 45px;
+  display: flex;
+  align-items: center;
+}
+
+.input-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9aa0a6;
+  font-size: 18px;
+  pointer-events: none;
+}
+
+/* Efeito ao focar o input */
+.input-group-icon .form-control:focus + .input-icon,
+.input-group-icon:focus-within .input-icon {
+  color: var(--color-primary);
+}
