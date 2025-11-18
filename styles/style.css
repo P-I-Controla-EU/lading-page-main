@@ -96,7 +96,8 @@
 }
 
 .card-plano.premium {
-  border: none; /* sem contorno plano mais ass.*/
+  border: none;
+  /* sem contorno plano mais ass.*/
 }
 
 .titulo-plano {
@@ -202,8 +203,10 @@
   outline: none;
   position: relative;
   border-radius: 14px;
-  text-decoration: none; /* remove sublinhado */
-  color: var(--color-primary); /* mantém a cor */
+  text-decoration: none;
+  /* remove sublinhado */
+  color: var(--color-primary);
+  /* mantém a cor */
   transition: background-color var(--transition-base), color var(--transition-base);
 }
 
@@ -252,7 +255,8 @@
 }
 
 .titulo-fundadores {
-  font-size: 1.8rem; /* menor para reduzir impacto visual */
+  font-size: 1.8rem;
+  /* menor para reduzir impacto visual */
   margin-bottom: 12px;
   color: var(--color-text);
   font-weight: 700;
@@ -273,7 +277,8 @@
   gap: 20px;
   max-width: 1100px;
   margin: 0 auto;
-  padding: 20px 0; /* reduzir espaçamento vertical */
+  padding: 20px 0;
+  /* reduzir espaçamento vertical */
   overflow-x: auto;
 }
 
@@ -281,10 +286,12 @@
   background-color: var(--color-white);
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  width: 240px; /* menor largura */
+  width: 240px;
+  /* menor largura */
   min-width: 240px;
   flex-shrink: 0;
-  padding: 24px 20px; /* padding reduzido */
+  padding: 24px 20px;
+  /* padding reduzido */
   transition: transform var(--transition-base),
     box-shadow var(--transition-base);
   display: flex;
@@ -293,7 +300,8 @@
 }
 
 .card-fundador:hover {
-  transform: scale(0.98); /* leve redução ao passar o mouse (mais sutil) */
+  transform: scale(0.98);
+  /* leve redução ao passar o mouse (mais sutil) */
   box-shadow: 0 6px 22px rgba(0, 0, 0, 0.08);
 }
 
@@ -643,7 +651,8 @@
 
 /* Aumentar tamanho do ícone dentro dos botões de contato */
 .btn-contato i {
-  font-size: 1.4rem; /* maior no desktop */
+  font-size: 1.4rem;
+  /* maior no desktop */
   line-height: 1;
   display: inline-block;
   vertical-align: middle;
@@ -708,6 +717,7 @@
     padding: 12px 18px;
   }
 }
+
 /*estilo do formulário de contato*/
 
 .contato-form {
@@ -717,6 +727,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .contato-form form {
@@ -735,7 +746,7 @@
   font-size: 16px;
   outline: none;
   transition: border 0.3s;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 .contato-form input:focus,
@@ -743,6 +754,7 @@
   border-color: #0d6efd;
   box-shadow: 0 0 5px rgba(13, 110, 253, 0.2);
 }
+
 /*estilo do botao enviar do contato form*/
 .btn-enviar {
   background-color: #1bb2f4;
@@ -762,4 +774,51 @@
 
 .btn-enviar:hover {
   background-color: #189cd4e5;
+}
+
+/*mensagem de enviado com sucesso*/
+
+#mensagem-sucesso {
+  position: absolute;
+  bottom: -50px;
+  /* aparece logo abaixo do botão, sem empurrar nada */
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: fit-content;
+
+  background: #0f865b;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 8px;
+
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  /* sombra suave */
+
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+
+  pointer-events: none;
+}
+
+#mensagem-sucesso.mostrar {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

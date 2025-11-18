@@ -101,3 +101,19 @@ if (registerForm && document.querySelector('#loginEmail')) {
   })
 }
 
+//adicionando mensagem de "enviado com sucesso"
+
+document.getElementById("form-contato").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const msg = document.getElementById("mensagem-sucesso");
+
+  msg.classList.add("mostrar");
+
+  form.reset();
+
+
+  setTimeout(() => {
+    msg.classList.remove("mostrar");
+  }, 3000);
+});
