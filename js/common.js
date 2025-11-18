@@ -103,17 +103,20 @@ if (registerForm && document.querySelector('#loginEmail')) {
 
 //adicionando mensagem de "enviado com sucesso"
 
-document.getElementById("form-contato").addEventListener("submit", function (e) {
+const form = document.getElementById("form-contato");
+const msgSucesso = document.getElementById("mensagem-sucesso");
+
+form.addEventListener("submit", function (e) {
   e.preventDefault();
 
-  const msg = document.getElementById("mensagem-sucesso");
+  // mostra a mensagem
+  msgSucesso.classList.add("mostrar");
 
-  msg.classList.add("mostrar");
-
+  // limpa o formulário inteiro
   form.reset();
 
-
+  // tira a mensagem após 3s
   setTimeout(() => {
-    msg.classList.remove("mostrar");
+    msgSucesso.classList.remove("mostrar");
   }, 3000);
 });

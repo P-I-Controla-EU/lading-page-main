@@ -291,13 +291,14 @@
 
       <div class="contato-form">
         <form action="#" method="post" id="form-contato">
-          <input type="text" name="text" placeholder="Seu nome" required>
-          <input type="email" name="email" placeholder="Seu e-mail" required>
-          <textarea name="mensagem" placeholder="Digite sua mensagem..." rows="5" required></textarea>
-          <button type="submit" class="btn-enviar">
+          <input type="text" name="text" placeholder="Seu nome" required id="nome">
+          <input type="email" name="email" placeholder="Seu e-mail" required id="email">
+          <textarea name="mensagem" id="msg" placeholder="Digite sua mensagem..." rows="5" required></textarea>
+          <button type="submit" class="btn-enviar" id="btn-enviar">
             <i class="fa-solid fa-paper-plane"></i> ENVIAR EMAIL
           </button>
         </form>
+
         <div id="mensagem-sucesso" > 
           E-mail enviado com sucesso! 
         </div>
