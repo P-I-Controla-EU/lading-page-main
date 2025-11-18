@@ -118,5 +118,5 @@ form.addEventListener("submit", function (e) {
   // tira a mensagem após 3s
   setTimeout(() => {
     msgSucesso.classList.remove("mostrar");
-  }, 3000);
+  }, 2000);
 });
