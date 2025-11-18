@@ -100,3 +100,4 @@ if (registerForm && document.querySelector('#loginEmail')) {
     window.location.href = 'index.html'
   })
 }
+
